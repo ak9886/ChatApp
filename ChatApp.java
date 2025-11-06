@@ -7,10 +7,10 @@ import java.security.MessageDigest;
 
 public class ChatApp extends JFrame {
 
-    // PostgreSQL connection details
-    static final String URL = "jdbc:postgresql://localhost:5432/chat_app";
-    static final String USER = "postgres";
-    static final String PASS = "postgres";
+    // PostgreSQL connection details (from Render environment variables)
+    static final String URL = System.getenv("DB_URL");
+    static final String USER = System.getenv("DB_USER");
+    static final String PASS = System.getenv("DB_PASS");
 
     private int userId = -1;
     private String username = "";
@@ -288,4 +288,3 @@ public class ChatApp extends JFrame {
         }
     }
 }
-
