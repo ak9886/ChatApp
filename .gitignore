@@ -1,0 +1,17 @@
+# Java build artifacts
+*.class
+*.log
+
+# Database config (optional if you store credentials)
+*.db
+*.env
+
+# IDE junk
+.idea/
+.vscode/
+*.iml
+
+# OS junk
+.DS_Store
+Thumbs.db
+
